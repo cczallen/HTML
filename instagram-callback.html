@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Auth Redirect</title>
+    <script type="text/javascript">
+        window.onload = function() {
+            // 檢查 URL 中是否有授權碼等參數
+            // 然後重定向到自定義 URL Scheme
+            window.location.replace("alv://instagram-callback" + window.location.search);
+        }
+    </script>
+</head>
+<body>
+    Redirecting...
+</body>
+</html>
